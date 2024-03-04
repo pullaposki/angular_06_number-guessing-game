@@ -1,0 +1,7 @@
+<!--Set up view template for game component-->
+
+<h1>Number Guessing Game</h1>
+<p>Guess a number between 1 and 10</p>
+<input type="number" [(ngModel)]="_guess" name="guess" min="1" max="10" />
+<button (click)="checkGuess()">Check</button>
+<p>{{ _message }}</p>
